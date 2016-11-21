@@ -29,6 +29,12 @@ var createMail = mail => {
 
 }
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.post('/email', (req, res) => {
   var options = {};
   options.from = { name: req.body.nome, address: req.body.email };
