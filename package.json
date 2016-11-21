@@ -1,0 +1,24 @@
+{
+  "name": "skynar",
+  "version": "1.0.0",
+  "description": "skyanr api",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "author": "MatheusBordin",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "nodemailer": "^2.6.4"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
