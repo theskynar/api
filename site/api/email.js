@@ -2,7 +2,7 @@ let api = {};
 
 let nodemailer = require('nodemailer'),
     fs = require('fs'),
-    transporter = nodemailer.createTransport('smtps://theskynar%40gmail.com:smartandfast@smtp.gmail.com'),
+    transporter = nodemailer.createTransport('smtps://theskynar%40gmail.com:smartandfast@smtp.gmail.com');
   var createMail = mail => {
   var file = fs.readFileSync('./templates/email.html', {encoding: "utf-8"});
       const regNome = /\{NOME\}/g;
